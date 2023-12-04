@@ -74,7 +74,8 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
             ], [
                 InlineKeyboardButton('☃️ Aʙᴏᴜᴛ', callback_data='about'),
                 InlineKeyboardButton('❗ Hᴇʟᴩ', callback_data='help')
-            ]])reply_to_message_id=message.id)			
+            ]])
+reply_to_message_id=message.id)			
 @bot.on_message(filters.text)
 def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 	print(message.text)
