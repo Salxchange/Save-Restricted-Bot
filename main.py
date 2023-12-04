@@ -65,7 +65,7 @@ def progress(current, total, message, type):
 # start command
 @bot.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-	bot.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, I am Save Restricted Bot, I can send you restricted content by it's post link__\n\n{USAGE}",
+	bot.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, I am Save Restricted Bot, I can send you restricted content by it's post link__\n\n➜ <a href="https://graph.org/How-To-Use-12-04">𝖧𝗈𝗐 𝖳𝗈 𝖴𝗌𝖾</a>,
 	        reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🧑‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="https://t.me/Snowball_Official")],
@@ -77,7 +77,7 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
                         "🌨️ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"https://t.me/Roofiverse"
                     ),
                 ],
-                [InlineKeyboardButton("Close 🔐", callback_data="close")],
+                [InlineKeyboardButton("", callback_data="close")],
             ]
         ),
   )
